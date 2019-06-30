@@ -1,5 +1,31 @@
 'use strict';
-let money, time;
+let money, time, 
+startbut = document.getElementById("start"),
+budgetfield = document.querySelector(".budget-value"),
+daybudgetfield = document.querySelector(".daybudget-value"),
+levelfield = document.querySelector(".level-value"),
+expensesfield = document.querySelector(".expenses-value"),
+optionalexpensesfield = document.querySelector(".optionalexpenses-value"),
+incomefield = document.querySelector(".income-value"),
+monthsavingsfield = document.querySelector(".monthsavings-value"),
+yearsavingsfield = document.querySelector(".yearsavings-value"),
+inputfields = document.querySelectorAll(".expenses-item"),
+buttons = document.getElementsByTagName("button"),
+ExpensesBtnApprove = buttons[0],
+OptionalExpensesBtnApprove = buttons[1],
+StartBtn = buttons[3],
+CountBtnBudget = buttons[2],
+InputExpensesfields = document.getElementsByClassName("expenses-item"),
+InputOptionalExpensesFields = document.querySelectorAll(".optionalexpenses-item"),
+InputCheckSavings = document.querySelector(".checksavings"),
+InputChooseIncome = document.querySelector(".choose-income"),
+InputChooseSum = document.querySelector(".choose-sum"),
+InputYearValue = document.querySelector(".year-value"),
+InputMonthValue = document.querySelector(".month-value"),
+InputDayValue = document.querySelector(".day-value");
+
+
+
 
 function start() {
     money = prompt("Ваш бюджет на месяц?");
@@ -87,3 +113,6 @@ let appdata = {
         }
     }
 };
+
+
+
